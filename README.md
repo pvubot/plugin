@@ -1,1 +1,1 @@
-# plugin
+# chrome-plugin

@@ -1,0 +1,28 @@
+{
+    "name": "PlantVsUndead-Plugin",
+    "description": "Помощник по работе с фермой на сайте Plant Vs Undead. Оповещает о вороны на цветах, оповещение о поливе",
+    "version": "1.0.1",
+    "manifest_version": 2,
+    "action": {
+      "default_icon": {
+        "16": "/images/get_started16.png",
+        "32": "/images/get_started32.png",
+        "48": "/images/get_started48.png",
+        "128": "/images/get_started128.png"
+      }
+    },
+    "icons": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://marketplace.plantvsundead.com/*"],
+            "js": ["pvu.js"]
+        }
+    ],
+    "permissions": ["storage"],
+    "options_page": "options.html"
+  }
